@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: #ebf6f8;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.main-container {
+  width: 340px;
+  height: 300px;
+  padding: 20px 10px;
+  background: #ebf6f8;
+  box-shadow: 8px 8px 11px #b3bbbc, -8px -8px 11px #ffffff;
+  box-sizing: border-box;
+}
+
+.questionAndtime {
+  width: 100%;
+  display: flex;
+}
+
+.question {
+  width: calc(100% - 50px);
+  height: 50px;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.time {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background: #397dd5;
+  color: #fff;
+  text-align: center;
+}
+
+.timer {
+  height: 4px;
+  background: #203958;
+  animation: timer 10s linear;
+}
+
+.choices > div {
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #bebebe;
+  margin: 10px 0;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.choices > div:hover {
+  background-color: #203958;
+  color: #fff;
+  border: none;
+}
+
+@keyframes timer {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+button {
+  margin-top: 20px;
+  padding: 5px 20px;
+  letter-spacing: 0.15rem;
+  background: #6698ab;
+  color: #fff;
+  border: none;
+}
